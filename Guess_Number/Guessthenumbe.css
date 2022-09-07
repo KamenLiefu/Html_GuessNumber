@@ -1,0 +1,11 @@
+#title,body {
+    font-size: 150%; /*设置字体大小,是默认字体的1.5倍*/
+    letter-spacing: 0.2em;/*增加字符间距为3.2px*/
+    text-align:center;/*居中*/
+    font-family:"华文楷体";/*华文楷体*/
+    background-image:url(beijing.jpg);
+}
+#submit {/*按钮设置*/
+    text-align: center;/*居中*/
+    padding-top: 150px;/*元素的上内边距为150px*/
+}

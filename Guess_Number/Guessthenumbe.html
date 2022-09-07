@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--设置字体格式为utf-8-->
+  <meta charset="UTF-8">
+  <title>实验三、猜数</title>
+  <!--导入外部41shwHangman.css文件-->
+  <link href="Guessthenumbe.css" type="text/css" rel="stylesheet" />
+  <!--引入外部41shwHangman.js文件-->
+  <script src="Guessthenumbe.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="page">
+  <div id="title">
+    <!--第一段欢迎来到在页面上居中显示-->
+    欢迎来到<br />
+    <!--第二段猜数字游戏在页面上居中显示-->
+    猜数字游戏<br />
+  </div>
+  <div id="random">
+    <div id="Tips">
+    </div>
+    <div id="Init">
+      <!--默认打开为初始化.jpg图片,在浏览器无法载入图像时,替换文本属性告诉失去的信息。-->
+      <img src="初始化.jpg" alt="hangman" /><br></div>
+  </div>
+</div>
+<div id="new">按“开始”按钮重新开始游戏!</div>
+<div>
+  <div id="submit" align="center">
+    <!--get提交：数据会显示在浏览器的地址栏,数据大小有限制-->
+    <form action="#" method="get">
+      <!--填写所猜数字的文本框-->
+      <input type="text" id="guessNum" name="guessNum" />
+      <!--提交所填写到文本框中的数字-->
+      <input type="button" id="guess" name="guess" onclick="checknum()" value="提交" />
+      <button onclick="begin();">开始</button>
+    </form>
+  </div>
+  <!--猜测数据记录显示-->
+  <div id="guesses"><br /></div>
+</div>
+</body>
+</html>
